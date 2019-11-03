@@ -15,7 +15,9 @@ To search Elasticsearh index
 ```
 curl -X PUT 'localhost:9200/_index'
 ```
-
+```
+curl -XGET 'http://localhost:9200/_aliases?pretty'
+```
 To clear Elasticsearch index
 ```
 curl -X DELETE 'localhost:9200/[index_name]'
